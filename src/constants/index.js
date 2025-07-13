@@ -1,168 +1,110 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-    car,
     contact,
     css,
-    estate,
-    express,
     git,
     github,
     html,
     javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
     react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
-    typescript
+    typescript,
+    pandas,
+    scikit,
+    matplotlib,
+    plotly,
 } from "../assets/icons";
+import { thead } from "framer-motion/client";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+        {
+            imageUrl: css,
+            name: "CSS",
+            type: "Frontend",
+        },
+        
+        {
+            imageUrl: git,
+            name: "Git",
+            type: "Version Control",
+        },
+        {
+            imageUrl: github,
+            name: "GitHub",
+            type: "Version Control",
+        },
+        {
+            imageUrl: html,
+            name: "HTML",
+            type: "Frontend",
+        },
+        {
+            imageUrl: javascript,
+            name: "JavaScript",
+            type: "Frontend",
+        },
+        {
+            imageUrl: react,
+            name: "React",
+            type: "Frontend",
+        },
+        {
+            imageUrl: tailwindcss,
+            name: "Tailwind CSS",
+            type: "Frontend",
+        },
+        {
+            imageUrl: typescript,
+            name: "TypeScript",
+            type: "Frontend",
+        },  
+        {
+            imageUrl: pandas,
+            name: "Pandas",
+            type: "Data Science",
+        },
+        {   
+            imageUrl: scikit,
+            name: "Scikit-learn",
+            type: "Machine Learning",
+        },
+        {
+            imageUrl: matplotlib,
+            name: "Matplotlib",
+            type: "Data Visualization",
+        },
+        { 
+            imageUrl:plotly,
+            name: "plotly",
+            type: "Data Visualization",
+        },
 ];
 
-export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+export const Certifications = [
+  {
+    title: "DataCamp Data Scientist Associate",
+    description:
+      "Earned the official certification by completing end-to-end machine learning and data analysis projects, including business problem-solving, model evaluation, and actionable recommendations.",
+    date: "April 2025",
+    badge: "📜 Certification",
+  },
+  {
+    title: "AquaVolt — Renewable Energy Hackathon",
+    description:
+      "Developed an AI-monitored wastewater reuse system using a Stirling engine and phytoremediation to generate electricity and treat industrial wastewater.",
+    date: "April 2025",
+    badge: "🏆 Winner",
+  },
+  {
+    title: "LLMOps & LangChain Basics",
+    description:
+      "Explored Hugging Face and LangChain, and integrated LLaMA 3 into personal chatbot experiments for the FocusGuard dashboard as part of my self-learning in LLMOps.",
+    date: "June–July 2025",
+    badge: "🧪 Self-Learning",
+  },
 ];
+
 
 export const socialLinks = [
     {
@@ -173,56 +115,49 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/talelboussetta',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/talel-boussetta/',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
+    title: "⚡ AquaVolt – Smart Wastewater Reuse System",
+    description:
+      "Hackathon-winning system that reuses hot wastewater to generate electricity via Stirling engine, then purifies it using AI-monitored phytoremediation(the github link takes u to the organizations repository where i've put what I did as part of the team).",
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
+        link: "https://github.com/La3b-Sghar/AquaVolt",
+      },
+   {
+        title: "📊 DataCamp Certification Projects",
+        description:
+        "Official DataCamp Data Scientist Associate certification projects, including loyalty program analysis and high-traffic recipe prediction using ML models.",
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        link: "https://github.com/talelboussetta/Certifications-",
+  },
+    {
+        
+        theme: 'btn-back-blue',
+        name: 'Supermarket Loyalty Spending Prediction',
+        description: 'This project was completed as part of a practice exam for the DataCamp Data Science Associate certification. The goal was to analyze a loyalty program dataset for a fictional international supermarket and build a model to predict customer spending.',
+        link: 'https://github.com/talelboussetta/supermarket-loyalty-prediction',
+    },
+    {
+       
+        theme: 'btn-back-pink',
+        name: ' Recipe Site Traffic Classification',
+        description: 'This project aims to analyze and predict the traffic level of recipes on a website, helping identify which recipes are likely to generate high traffic (go viral) based on their nutritional and categorical features. It demonstrates a complete data science workflow from data cleaning to model evaluation with a focus on business-relevant metrics.',
+        link: 'https://github.com/talelboussetta/HighTraffic-Recipe-Classificator'
+    },
+    {
+    title: "🌐 This Portfolio Website",
+    description:
+      "Fully responsive personal portfolio website built with React, Tailwind, and Framer Motion. Showcases my work in AI, ML, and robotics.",
+    link: "https://github.com/talelboussetta/portfolio",
+    theme: 'btn-back-purple',
+  },
 ];

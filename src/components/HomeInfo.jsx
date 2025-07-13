@@ -7,10 +7,10 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Adrian</span>
+        <span className='font-semibold mx-2 text-white'>Talel</span>
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        An aspiring Data Scientist and AI enthusiast from tunisia
       </h1>
     );
 
@@ -18,7 +18,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with many companies <br /> and picked up many skills along the way
+          Currently studying in university <br /> and exploring the world of AI and Data Science. 
         </p>
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>

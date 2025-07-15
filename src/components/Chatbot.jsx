@@ -21,6 +21,11 @@ const Chatbot = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userInput: input }),
       });
+      if (!res.ok) {
+            const errorText = await res.text();
+            console.error('Server Error:', res.status, errorText);
+            setMessages(prev => [...prev, { role: 'bot', content: `⚠️ Error: ${res.status}` }]);
+            return;}
       const data = await res.json();
 
       const botMsg = { role: 'bot', content: data.reply };

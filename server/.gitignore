@@ -1,5 +1,5 @@
-server/.env.api
+.env.api
 
 node_modules/
 dist/
-
+*env

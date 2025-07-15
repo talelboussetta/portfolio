@@ -1,4 +1,4 @@
-server/.env
+server/.env.api
 
 node_modules/
 dist/

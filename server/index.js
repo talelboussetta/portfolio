@@ -49,7 +49,7 @@ app.post('/ask', async (req, res) => {
         { role: "user", content: userInput }
       ],
       temperature: 0.7,
-      max_tokens: 60,
+      max_tokens:200,
       top_p: 0.9,
     });
 

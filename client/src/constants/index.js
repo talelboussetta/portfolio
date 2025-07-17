@@ -15,8 +15,7 @@ import {
     matplotlib,
     plotly,
 } from "../assets/icons";
-import "framer-motion"
-import { thead } from "framer-motion";
+import { thead } from "framer-motion/client";
 
 export const skills = [
         {

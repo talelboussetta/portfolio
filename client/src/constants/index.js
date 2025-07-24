@@ -102,6 +102,13 @@ export const Certifications = [
     date: "June–July 2025",
     badge: "🧪 Self-Learning",
   },
+  {
+    title: "Datacamp Data Scientist Professional Certification",
+    description:
+      "Completed a comprehensive data science curriculum covering Python, SQL, machine learning, and data visualization, with hands-on projects and real-world datasets. Including a must do project on predicting high traffic recipes for a restaurant focusing on accuracy and business plans and KPI's.",
+    date: "July 2025-July 2027",
+    badge: "📜 Certification",
+    }
 ];
 
 

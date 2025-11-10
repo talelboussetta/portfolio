@@ -166,4 +166,10 @@ export const projects = [
     link: "https://github.com/talelboussetta/portfolio",
     theme: 'btn-back-purple',
   },
+  {
+    title:"Computer vision embedded system for autonomous robots",
+    description:"Computer Vision system for the ENSI Eurobot 2025 competition. The system successfully implements vision-based solutions for all three competition tasks: Task 1: Color Detection - Identify red and blue objects with size filteringTask 2: Number Recognition - Detect digits 3, 5, 6, 9 using fine-tuned YOLO Task 3: Object Detection - Identify green cubes and triangles with verification",
+    link:"https://github.com/INSATEURO2026/Computer_vision",
+    theme: 'btn-back-red',
+  }
 ];

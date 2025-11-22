@@ -171,5 +171,11 @@ export const projects = [
     description:"Computer Vision system for the ENSI Eurobot 2025 competition. The system successfully implements vision-based solutions for all three competition tasks: Task 1: Color Detection - Identify red and blue objects with size filteringTask 2: Number Recognition - Detect digits 3, 5, 6, 9 using fine-tuned YOLO Task 3: Object Detection - Identify green cubes and triangles with verification",
     link:"https://github.com/INSATEURO2026/Computer_vision",
     theme: 'btn-back-red',
+  },
+  {
+    title:"🏆 AI Camera Challenge - First Place Winner",
+    description:"Led vision system development for a real-time customer insights platform at Global AI Congress Africa hackathon. Built comprehensive AI pipeline featuring YOLOv8 person detection with smart ROI filtering, custom CNN emotion recognition (FER13 dataset), MediaPipe body language analysis, and HuggingFace age/gender estimation. All models integrated into dockerized system with live dashboard tracking customer satisfaction, engagement duration, and interaction quality metrics.",
+    link:"https://lnkd.in/eWzXRFsK",
+    theme: 'btn-back-orange',
   }
 ];

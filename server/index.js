@@ -13,7 +13,18 @@ console.log('HF_TOKEN:', process.env.HF_TOKEN ? '✅ Present' : '❌ Missing');
 // Create Hugging Face client instance
 const client = new InferenceClient(process.env.HF_TOKEN);
 
+// Add process-level error handlers
+process.on('uncaughtException', (err) => {
+  console.error('💥 Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('💥 Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 app.post('/ask', async (req, res) => {
+  console.log('📨 Received request:', req.body);
+  
   let { userInput } = req.body;
 
   if (!userInput || typeof userInput !== 'string' || userInput.trim() === '') {
@@ -22,11 +33,12 @@ app.post('/ask', async (req, res) => {
 
   // Clean & trim
   userInput = userInput.trim().slice(0, 300).replace(/[\u0000-\u001F\u007F-\u009F]/g, '');
+  console.log('✅ Cleaned input:', userInput);
 
   try {
+    console.log('🚀 Calling Hugging Face API...');
     const chatCompletion = await client.chatCompletion({
-      provider: "fireworks-ai",
-      model: "meta-llama/Llama-3.1-8B-Instruct",
+      model: "meta-llama/Llama-3.2-3B-Instruct",
       messages: [
          {role: "system",
         content: `You are a helpful assistant embedded in the personal portfolio website of Talel Boussetta, a data science student at INSAT. Here is some background info about Talel:
@@ -53,13 +65,17 @@ app.post('/ask', async (req, res) => {
       top_p: 0.9,
     });
 
-    const reply = chatCompletion.choices[0].message.content;
+    console.log('📦 Raw response:', JSON.stringify(chatCompletion));
+    const reply = chatCompletion.choices[0]?.message?.content?.trim() || "I'm not sure how to respond to that.";
     console.log("🧠 Model reply:", reply);
     res.json({ reply });
 
   } catch (err) {
-    console.error("🔥 Hugging Face API error:", err.response?.data || err.message);
-    res.status(500).json({ reply: "⚠️ Hugging Face error or model too slow." });
+    console.error("🔥 Hugging Face API error:", err);
+    console.error("Error type:", err.constructor.name);
+    console.error("Error message:", err.message);
+    if (err.stack) console.error("Error stack:", err.stack);
+    res.status(500).json({ reply: "⚠️ Sorry, I'm having trouble connecting. Please try again later." });
   }
 });
 app.listen(PORT, () => {

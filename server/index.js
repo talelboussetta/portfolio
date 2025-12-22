@@ -22,6 +22,11 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('💥 Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'Chatbot API is running' });
+});
+
 app.post('/ask', async (req, res) => {
   console.log('📨 Received request:', req.body);
   

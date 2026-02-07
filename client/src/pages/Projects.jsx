@@ -24,7 +24,10 @@ const Projects = () => {
 
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
+          <div
+            className='lg:w-[400px] w-full'
+            key={project.name ?? project.title}
+          >
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
@@ -34,7 +37,7 @@ const Projects = () => {
 
             <div className='mt-5 flex flex-col'>
               <h4 className='text-2xl font-poppins font-semibold'>
-                {project.name}
+                {project.name ?? project.title}
               </h4>
               <p className='mt-2 text-slate-500'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-poppins'>

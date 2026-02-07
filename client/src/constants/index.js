@@ -159,12 +159,19 @@ export const projects = [
         description: 'This project aims to analyze and predict the traffic level of recipes on a website, helping identify which recipes are likely to generate high traffic (go viral) based on their nutritional and categorical features. It demonstrates a complete data science workflow from data cleaning to model evaluation with a focus on business-relevant metrics.',
         link: 'https://github.com/talelboussetta/HighTraffic-Recipe-Classificator'
     },
-    {
+  {
     title: "🌐 This Portfolio Website",
     description:
       "Fully responsive personal portfolio website built with React, Tailwind, and Framer Motion. Showcases my work in AI, ML, and robotics.",
     link: "https://github.com/talelboussetta/portfolio",
     theme: 'btn-back-purple',
+  },
+  {
+    name: "FocusGuard — AI Focus Platform",
+    description:
+      "Full-stack focus platform with FastAPI + PostgreSQL backend (JWT auth, sessions, stats, garden gamification), AI insights (blink/focus analysis, RAG coaching), and a React dashboard. Tech: FastAPI, SQLAlchemy, asyncpg, JWT, Qdrant + HF/LLM, MediaPipe/ONNX in-browser.",
+    link: "https://github.com/talelboussetta/FocusGuard-ML",
+    theme: "btn-back-green",
   },
   {
     title:"Computer vision embedded system for autonomous robots",

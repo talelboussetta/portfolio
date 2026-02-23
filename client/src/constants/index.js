@@ -132,6 +132,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+    title: "🤖 RAG + n8n Automation System",
+    description:
+      "End-to-end Retrieval-Augmented Generation system integrated with n8n for event-driven workflows. Built ingestion, chunking, embeddings, vector DB retrieval, and context-aware prompting; orchestrated automated actions via n8n (API calls, DB updates, external services). Optimized chunk sizes, embeddings, and retrieval for precision, recall, and token efficiency.",
+    theme: 'btn-back-blue',
+    link: "#",
+  },
+    {
     title: "⚡ AquaVolt – Smart Wastewater Reuse System",
     description:
       "Hackathon-winning system that reuses hot wastewater to generate electricity via Stirling engine, then purifies it using AI-monitored phytoremediation(the github link takes u to the organizations repository where i've put what I did as part of the team).",

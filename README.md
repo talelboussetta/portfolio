@@ -36,6 +36,13 @@ This portfolio is built using **React.js** with **Tailwind CSS** and highlights:
 
 The chatbot integration and productivity tools aim to blend personal branding with practical AI-enhanced features.
 
+## 🔥 Highlighted Projects
+
+- 🤖 RAG + n8n Automation System  
+  End-to-end Retrieval-Augmented Generation system integrated with n8n for event-driven workflows. Built ingestion, chunking, embeddings, vector DB retrieval, and context-aware prompting; orchestrated automated actions via n8n (API calls, DB updates, external services). Optimized chunk sizes, embeddings, and retrieval for precision, recall, and token efficiency.  
+  Live/Code: see the Projects section in the site.
+
+## 📁 Structure
 ## 📁 Structure
 
 ```bash
@@ -50,3 +57,34 @@ The chatbot integration and productivity tools aim to blend personal branding wi
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+```
+
+## ▶️ Getting Started
+
+Prerequisites:
+- Node.js 18+
+
+Install dependencies and run the dev server:
+
+```bash
+cd client
+npm ci
+npm run dev
+```
+
+Build and preview production:
+
+```bash
+npm run build
+npm run preview
+```
+
+## 🧩 Where to Update Projects
+
+- Project cards are defined in: `client/src/constants/index.js` under `projects`.  
+  Add, remove, or edit entries there to update the Projects page.
+
+## 📫 Contact
+
+- GitHub: https://github.com/talelboussetta  
+- LinkedIn: https://www.linkedin.com/in/talel-boussetta/
